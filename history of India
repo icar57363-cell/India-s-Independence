@@ -1,0 +1,275 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>History of India</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+
+            background-image:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.55),
+                    rgba(0, 0, 0, 0.55)
+                ),
+                url("history.webp");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+            color: white;
+        }
+
+        .container {
+            min-height: 100vh;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 55px;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+
+            text-shadow:
+                3px 3px 10px black;
+        }
+
+        .subtitle {
+            font-size: 22px;
+            font-style: italic;
+            margin-bottom: 50px;
+
+            text-shadow:
+                2px 2px 6px black;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: auto;
+
+            background: rgba(0, 0, 0, 0.65);
+
+            padding: 35px;
+
+            border-radius: 18px;
+
+            border: 2px solid rgba(255, 255, 255, 0.6);
+
+            backdrop-filter: blur(5px);
+
+            text-align: left;
+        }
+
+        .content h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .content p {
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .timeline {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .event {
+            width: 260px;
+
+            background: rgba(0, 0, 0, 0.70);
+
+            padding: 25px;
+
+            border-radius: 15px;
+
+            border: 1px solid rgba(255, 255, 255, 0.5);
+
+            transition: 0.3s;
+        }
+
+        .event:hover {
+            transform: translateY(-8px);
+            background: rgba(0, 0, 0, 0.85);
+        }
+
+        .event h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .event p {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .back {
+            display: inline-block;
+
+            margin-top: 40px;
+
+            padding: 14px 25px;
+
+            background: rgba(255, 255, 255, 0.9);
+
+            color: black;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            border-radius: 8px;
+
+            transition: 0.3s;
+        }
+
+        .back:hover {
+            transform: scale(1.05);
+            background: white;
+        }
+
+        footer {
+            margin-top: 50px;
+
+            font-size: 17px;
+
+            font-weight: bold;
+
+            text-shadow: 2px 2px 5px black;
+        }
+
+        @media (max-width: 600px) {
+
+            h1 {
+                font-size: 38px;
+            }
+
+            .subtitle {
+                font-size: 18px;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>HISTORY OF INDIA</h1>
+
+        <p class="subtitle">
+            A Journey Through India's Past
+        </p>
+
+        <div class="content">
+
+            <h2>India's Journey</h2>
+
+            <p>
+                India has a long and remarkable history that stretches back
+                thousands of years. From ancient civilizations and powerful
+                kingdoms to the period of British rule, India's history is
+                filled with achievements, struggles and important changes.
+            </p>
+
+            <p>
+                The struggle for independence became one of the most important
+                chapters in India's history. Millions of people participated
+                in the movement and worked towards achieving freedom.
+            </p>
+
+        </div>
+
+        <div class="timeline">
+
+            <div class="event">
+
+                <h3>🏛️ Ancient India</h3>
+
+                <p>
+                    Ancient India was home to remarkable civilizations,
+                    including the Indus Valley Civilization. Great advances
+                    were made in mathematics, science, medicine and culture.
+                </p>
+
+            </div>
+
+            <div class="event">
+
+                <h3>👑 Medieval India</h3>
+
+                <p>
+                    India saw the rise and fall of many kingdoms and empires.
+                    Different cultures, languages and traditions influenced
+                    Indian society during this period.
+                </p>
+
+            </div>
+
+            <div class="event">
+
+                <h3>⚔️ 1857</h3>
+
+                <p>
+                    The uprising of 1857 became an important early challenge
+                    to British rule and is remembered as a major event in
+                    India's struggle for freedom.
+                </p>
+
+            </div>
+
+            <div class="event">
+
+                <h3>🇮🇳 Independence</h3>
+
+                <p>
+                    After a long freedom movement and the efforts of many
+                    people, India became independent on 15 August 1947.
+                </p>
+
+            </div>
+
+        </div>
+
+        <a class="back" href="index.html">
+            ← Back to Home
+        </a>
+
+        <footer>
+            🇮🇳 Remembering India's History 🇮🇳
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
+```
