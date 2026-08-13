@@ -1,0 +1,346 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>15 August - Independence Day</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+
+            background-image:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.45),
+                    rgba(0, 0, 0, 0.45)
+                ),
+                url("15.webp");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+            color: white;
+        }
+
+        .container {
+            min-height: 100vh;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 60px;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+            text-shadow: 3px 3px 10px black;
+        }
+
+        .subtitle {
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 45px;
+            text-shadow: 2px 2px 6px black;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: auto;
+
+            background: rgba(0, 0, 0, 0.68);
+
+            padding: 40px;
+
+            border-radius: 20px;
+
+            border: 2px solid rgba(255, 255, 255, 0.6);
+
+            backdrop-filter: blur(5px);
+
+            text-align: left;
+        }
+
+        .content h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .ideas {
+            max-width: 1000px;
+            margin: 45px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+            gap: 20px;
+        }
+
+        .idea {
+            background: rgba(0, 0, 0, 0.70);
+
+            padding: 25px;
+
+            border-radius: 15px;
+
+            border: 1px solid rgba(255, 255, 255, 0.5);
+
+            transition: 0.3s;
+        }
+
+        .idea:hover {
+            transform: translateY(-8px);
+            background: rgba(0, 0, 0, 0.85);
+        }
+
+        .idea h3 {
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .idea p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .message {
+            max-width: 900px;
+            margin: 45px auto 0;
+
+            background: rgba(255, 255, 255, 0.92);
+
+            color: #222;
+
+            padding: 35px;
+
+            border-radius: 18px;
+
+            text-align: center;
+        }
+
+        .message h2 {
+            margin-bottom: 15px;
+            font-size: 30px;
+        }
+
+        .message p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .back {
+            display: inline-block;
+
+            margin-top: 45px;
+
+            padding: 14px 28px;
+
+            background: white;
+
+            color: black;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            border-radius: 8px;
+
+            transition: 0.3s;
+        }
+
+        .back:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 45px;
+
+            font-size: 18px;
+
+            font-weight: bold;
+
+            text-shadow: 2px 2px 5px black;
+        }
+
+        @media (max-width: 600px) {
+
+            h1 {
+                font-size: 40px;
+            }
+
+            .subtitle {
+                font-size: 19px;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>15 AUGUST</h1>
+
+    <p class="subtitle">
+        🇮🇳 India's Independence Day 🇮🇳
+    </p>
+
+
+    <div class="content">
+
+        <h2>More Than Just a Celebration</h2>
+
+        <p>
+            Every year on 15 August, we celebrate India's Independence Day
+            and remember the people who struggled for our freedom.
+        </p>
+
+        <p>
+            But Independence Day should not be only about flags, decorations
+            and celebrations. It should also remind us of our responsibility
+            towards our country.
+        </p>
+
+        <p>
+            We should respect India by becoming responsible citizens and
+            doing our part to make our country cleaner, safer and better.
+            Even small actions can make a difference.
+        </p>
+
+    </div>
+
+
+    <div class="ideas">
+
+        <div class="idea">
+
+            <h3>🌱 Keep India Clean</h3>
+
+            <p>
+                Do not throw garbage on roads, in rivers or in public places.
+                Use dustbins and help keep our surroundings clean.
+            </p>
+
+        </div>
+
+
+        <div class="idea">
+
+            <h3>💧 Protect Our Environment</h3>
+
+            <p>
+                Save water, avoid unnecessary waste and protect trees,
+                animals and the natural environment around us.
+            </p>
+
+        </div>
+
+
+        <div class="idea">
+
+            <h3>🤝 Respect Others</h3>
+
+            <p>
+                Treat people with kindness and respect. A strong country
+                is built by people who care about one another.
+            </p>
+
+        </div>
+
+
+        <div class="idea">
+
+            <h3>📚 Learn and Improve</h3>
+
+            <p>
+                Education, knowledge and good habits help us become better
+                citizens and contribute positively to our country.
+            </p>
+
+        </div>
+
+
+        <div class="idea">
+
+            <h3>🇮🇳 Respect Our Country</h3>
+
+            <p>
+                Respect the Constitution, national symbols, public places
+                and the people who work to keep our country running.
+            </p>
+
+        </div>
+
+
+        <div class="idea">
+
+            <h3>💡 Use Common Sense</h3>
+
+            <p>
+                Simple responsible choices—such as not littering, following
+                rules and caring for public property—can help make India
+                better every day.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="message">
+
+        <h2>Our Independence, Our Responsibility</h2>
+
+        <p>
+            We should not wait for 15 August to show that we care about India.
+            Let us respect our country throughout the year, keep it clean,
+            protect its environment, help others and work towards a better
+            future.
+        </p>
+
+    </div>
+
+
+    <a href="index.html" class="back">
+        ← Back to Home
+    </a>
+
+
+    <footer>
+        🇮🇳 Proud of India. Responsible for India. 🇮🇳
+    </footer>
+
+</div>
+      <a href="index.html" class="back">
+    ← Back to Home
+</a>
+
+</body>
+
+</html>
+```
