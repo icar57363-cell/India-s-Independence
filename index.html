@@ -115,6 +115,92 @@
             text-shadow: 2px 2px 5px black;
         }
 
+
+        /* =========================
+           MUSIC BUTTON
+        ========================= */
+
+        #musicButton {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+
+            padding: 13px 20px;
+
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+
+            border: 2px solid white;
+            border-radius: 30px;
+
+            font-size: 15px;
+            font-weight: bold;
+
+            cursor: pointer;
+
+            z-index: 99999;
+
+            transition: 0.3s;
+        }
+
+        #musicButton:hover {
+            background: #ff9933;
+            transform: scale(1.05);
+        }
+
+
+        /* =========================
+           OTHER PAGES
+        ========================= */
+
+        #websitePage {
+            display: none;
+
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+
+            border: none;
+
+            background: white;
+
+            z-index: 1000;
+        }
+
+
+        /* HOME BUTTON */
+
+        #homeButton {
+            display: none;
+
+            position: fixed;
+            top: 20px;
+            left: 20px;
+
+            padding: 12px 18px;
+
+            background: rgba(0, 0, 0, 0.85);
+            color: white;
+
+            border: 2px solid white;
+            border-radius: 25px;
+
+            font-size: 15px;
+            font-weight: bold;
+
+            cursor: pointer;
+
+            z-index: 99999;
+        }
+
+        #homeButton:hover {
+            background: #138808;
+        }
+
+
         @media (max-width: 600px) {
 
             h1 {
@@ -129,15 +215,44 @@
                 font-size: 50px;
             }
 
+            .card {
+                width: 90%;
+            }
+
         }
 
     </style>
 
 </head>
 
+
 <body>
 
-    <div class="container">
+
+    <!-- =========================
+         MUSIC
+    ========================== -->
+
+    <audio id="bgMusic" loop>
+
+        <source src="vande.mp3" type="audio/mpeg">
+
+    </audio>
+
+
+    <!-- MUSIC BUTTON -->
+
+    <button id="musicButton">
+        ▶ Play Vande Mataram
+    </button>
+
+
+
+    <!-- =========================
+         HOME PAGE
+    ========================== -->
+
+    <div class="container" id="homePage">
 
         <div class="chakra">☸</div>
 
@@ -146,6 +261,7 @@
         <p class="slogan">
             "Remember the Past. Celebrate the Freedom. Build the Future."
         </p>
+
 
         <div class="intro">
 
@@ -163,7 +279,9 @@
 
             <!-- HISTORY OF INDIA -->
 
-            <a href="history.html" class="card">
+            <a href="history.html"
+               class="card"
+               target="websitePage">
 
                 <h2>📜 History of India</h2>
 
@@ -175,9 +293,12 @@
             </a>
 
 
+
             <!-- FREEDOM FIGHTERS -->
 
-            <a href="free.html" class="card">
+            <a href="free.html"
+               class="card"
+               target="websitePage">
 
                 <h2>🇮🇳 Our Freedom Fighters</h2>
 
@@ -189,9 +310,12 @@
             </a>
 
 
+
             <!-- 15 AUGUST -->
 
-            <a href="August.html" class="card">
+            <a href="August.html"
+               class="card"
+               target="websitePage">
 
                 <h2>🎉 How We Can Celebrate</h2>
 
@@ -213,6 +337,111 @@
         </footer>
 
     </div>
+
+
+
+    <!-- =========================
+         OTHER HTML PAGES
+    ========================== -->
+
+    <iframe
+        id="websitePage"
+        name="websitePage">
+    </iframe>
+
+
+
+    <!-- HOME BUTTON -->
+
+    <button id="homeButton">
+        🏠 Home
+    </button>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        const music = document.getElementById("bgMusic");
+
+        const musicButton =
+            document.getElementById("musicButton");
+
+        const homePage =
+            document.getElementById("homePage");
+
+        const websitePage =
+            document.getElementById("websitePage");
+
+        const homeButton =
+            document.getElementById("homeButton");
+
+
+        /* MUSIC */
+
+        musicButton.addEventListener("click", function () {
+
+            if (music.paused) {
+
+                music.play();
+
+                musicButton.innerHTML =
+                    "⏸ Pause Vande Mataram";
+
+            } else {
+
+                music.pause();
+
+                musicButton.innerHTML =
+                    "▶ Play Vande Mataram";
+
+            }
+
+        });
+
+
+
+        /* OPEN OTHER PAGES */
+
+        const cards =
+            document.querySelectorAll(".card");
+
+
+        cards.forEach(function(card) {
+
+            card.addEventListener("click", function() {
+
+                homePage.style.display = "none";
+
+                websitePage.style.display = "block";
+
+                homeButton.style.display = "block";
+
+            });
+
+        });
+
+
+
+        /* HOME BUTTON */
+
+        homeButton.addEventListener("click", function() {
+
+            websitePage.src = "";
+
+            websitePage.style.display = "none";
+
+            homeButton.style.display = "none";
+
+            homePage.style.display = "block";
+
+        });
+
+    </script>
+
 
 </body>
 
